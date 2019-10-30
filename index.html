@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Google Fonts import -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Custom css import -->
+    <link rel="stylesheet" href="index.css">
+    <title>Search for GitHub Users!</title>
+</head>
+
+<body>
+    <!-- Card creator -->
+    <div class="card">
+        <!-- Container for all the card things -->
+        <div class="container">
+            <!-- Main title of the card -->
+            <h1 class="MainTitle">Search for GitHub users!</h1>
+            <!-- Container for the input and button search -->
+            <div class="searchContainer">
+                <!-- Input search -->
+                <input type="text" class="searchInput" id="searchInput" placeholder="Seach username...">
+                <!-- Seatch button -->
+                <button onClick="seachUser()" class="searchButton" id="searchButton" type="button">Search</button>
+            </div>
+            <!-- Container for the github user information -->
+            <div class="userInfoContainer">
+                <!-- Container for the avatar of the github user -->
+                <div class="userAvatarContainer">
+                    <!-- Img of the avatar of the github user -->
+                    <img src="" alt="User avatar" id="userAvatar" class="userAvatar">
+                </div>
+                <!-- Container for the basic information of the github user -->
+                <div class="basicUserInfo">
+                    <!-- Username of the github user -->
+                    <p class="username" id="username"></p>
+                    <!-- Name of the github user  -->
+                    <p class="name" id="name"></p>
+                    <!-- Bio of the github user -->
+                    <p class="bio" id="bio"></p>
+                </div>
+            </div>
+            <!-- Container for the repositores of the github user -->
+            <div class="repos">
+                <!-- Container for the label of the repositories of the github user -->
+                <div id="repositoriesLabelContainer">
+                    <!-- Label of the repositories of the github user -->
+                    <p id="repositoriesLabel">Repositories</p>
+                    <!-- Line for divide the label and the table-->
+                    <hr style="height:2px;border-width:0;background-color:gray">
+                </div>
+                <!-- Container for the table with the information of the repositories of the github user -->
+                <div class="tableContainer">
+                    <!-- Table with the information of the repositories of the github user -->
+                    <table id="reposTable">
+                    </table>
+                </div>
+            </div>
+            <!-- Container of the error message in case the user does not exists -->
+            <div class="errorContainer">
+                <!-- Error message in case the user does not exists-->
+                <p class="errorMessage" id="errorMessage">Does not exist</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Import of the main script -->
+    <script src="main.js"></script>
+</body>
+
+</html>

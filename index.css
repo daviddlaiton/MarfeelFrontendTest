@@ -1,0 +1,213 @@
+/* Defines the caractheristics of the body */
+body {
+    /* Roboto font for all the text in the body */
+    font-family: 'Roboto', sans-serif;
+    /* A light grey color for the background */
+    background-color: #F0F0F0;
+}
+
+/* Defines the card styles properties */
+.card{
+    /* Margin to be separated from the top of the page */
+    margin-top: 15px;
+    /* Auto margins to center the card */
+    margin-left: auto;
+    margin-right: auto;
+    /* Shadow of the card to create the feeling of depth */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    /* Transmitions when the mouse is over the card */
+    transition: 0.3s;
+    /* width of the card */
+    width: 500px;
+    /* Make the corners rounded */
+    border-radius: 5px;
+}
+
+/* Defines the card styles properties when the user put the mouse over the card*/
+.card:hover {
+    /* Changes the card's shadow to change the feeling of depth */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+/* Defines the card container styles properties */
+.container {
+    /* Padding to sepate it from the top of the page */
+    padding: 10px 16px;
+}
+
+/* Defines the main title styles properties */
+.MainTitle {
+    /* Margin to be separated from the top of the card */
+    margin-top: 15px;
+    /* Center the title */
+    text-align: center;
+}
+
+/* Defines the search container styles properties */
+.searchContainer {
+    /* Center the container */
+   text-align: center;
+}
+
+/* Defines the search input styles properties */
+.searchInput {
+    /* Allows to be in the same line with the search button */
+    display: inline-block;
+    /* padding to be at some distance from the button and the title */
+    padding: 2px 16px;
+    /* Change the font size */
+    font-size: 16px;
+    /* Make the corners rounded */
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Change the color of the border */
+    border: 2px solid #ccc;
+    /* The width depends on the screen size (widht) */
+    width: 50%;
+}
+
+/* Defines the search button styles properties */
+.searchButton {
+    /* Allows to be in the same line with the search input */
+    display: inline-block;
+    /* Make the corners rounded */
+    border-radius: 2px;
+    /* padding to be at some distance from the input and the title */
+    padding: 6px 8px;
+    /* Makes the text bold */
+    font-weight: bold;
+    /* Changes the background color */
+    background-color: #F0F0F0;
+}
+
+/* Defines the user avatar container styles properties */
+.userAvatarContainer{
+    /* Allows to be  in the same line with the user basic information*/
+    display: inline-block;
+    /* Margin to be at some distance from the user basic information */
+    margin: 5px 0px;
+}
+
+/* Defines the user avatar styles properties */
+.userAvatar {
+    /* Size of the avatar */
+    height: 130px;
+    width: 130px;
+    /* Makes the corners rounded */
+    border-radius: 5px;
+}
+
+/* Defines the basic user information styles properties */
+.basicUserInfo {
+    /* Allows to be  in the same line with the user avatar*/
+    display: inline-block;
+    /* Margin to be at some distance from the user avatar */
+    margin: 5px;
+    /* Makes the information be at the top */
+    position: relative;
+    vertical-align: top;
+}
+
+/* Defines the username styles properties */
+.username{
+    /* Font in italic */
+    font-style: italic;
+    /* Margin to be at some distance from all the other user information*/
+    margin: 5px;
+}
+
+/* Defines the name styles properties */
+.name{
+    /* Font bold */
+    font-weight: bold;
+    /* Changes the size if the name */
+    font-size: 25px;
+    /* Margin to be at some distance from all the other user information*/
+    margin: 5px;
+}
+
+/* Defines the bio styles properties */
+.bio {
+    /* Limits the width of the bio */
+    width: 300px;
+    /* Margin to be at some distance from all the other user information*/
+    margin: 5px;
+}
+
+/* Defines the error message styles properties */
+.errorMessage {
+    /* Center the text */
+    text-align: center;
+    /* Defines a light red background color */
+    background-color: #F9DEDD;
+    /* Limits the width of the error message */
+    width: 300px;
+     /* Margin and padding to be at some distance from the input and button of search*/
+    margin: auto;
+    padding: 5px 0px;
+    /* Makes the corners rounded */
+    border-radius: 4px;
+    /* Changes the border color to a stronger red than the background */
+    border: 1px solid #fc635d;
+    /* Changes the color of the text */
+    color: #fc635d;
+}
+
+/* Defines the repositories label styles properties */
+#repositoriesLabel{
+    /* Font bold */
+    font-weight: bold;
+    /* Move the label to the left */
+    margin-left: 5px;
+}
+
+/* Defines the table of repositories container styles properties */
+.tableContainer{
+    /* Allows to the table have a fixed height and be scrollable */
+    display: inline-block;
+    overflow-y: scroll;
+    max-height:300px;
+    /* Defines the widht of the table */
+    width: 100%;
+}
+
+/* Defines the table of repositories styles properties */
+#reposTable {
+    /* Defines the borders of the table style */
+    border-collapse: collapse;
+    /* center the table */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Defines the rows of the table of repositories styles properties */
+td {
+    /* Defines the separation of each row */
+    padding: 8px;
+    /* Make the text be at the left of each row */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    /* Font bold */
+    font-weight: bold;
+  }
+  
+/* Defines the rows of the table of repositories styles properties when the user put the mouse over the card*/
+tr:hover{
+    /* changes the background color when the mouse is over the row */
+      background-color:#f5f5f5;
+}
+
+/* Defines the rows of the table of repositories styles properties*/
+#forkSvg {
+    /* Defines the size of the fork image */
+    height: 24px;
+    width: 20px;
+}
+
+/* Changes some styles when the screen size (width specially) is too small */
+@media only screen and (max-width: 500px) {
+    .card, .errorMessage {
+        /* Changes the width to be all the available widht */
+        width: 100%;
+    }
+}
